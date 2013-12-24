@@ -21,17 +21,17 @@ import org.kohsuke.stapler.QueryParameter;
 
 public class Endpoint {
 
-	private Protocol protocol = Protocol.TCP;
+	private final Protocol protocol = Protocol.TCP;
 
-	private Format format = Format.SSTP;
+	private final Format format = Format.SSTP;
 
 	private String url;
 
 	@DataBoundConstructor
 	public Endpoint(Protocol protocol, String url, Format format) {
-		this.protocol = protocol;
+		//this.protocol = protocol;
 		this.url = url;
-		this.format = format;
+		//this.format = format;
 	}
 
 	public Protocol getProtocol() {
@@ -39,7 +39,7 @@ public class Endpoint {
 	}
 
 	public void setProtocol(Protocol protocol) {
-		this.protocol = protocol;
+		//this.protocol = protocol;
 	}
 
 	public String getUrl() {
@@ -51,14 +51,11 @@ public class Endpoint {
 	}
 	
 	public Format getFormat() {
-        if (this.format==null){
-            this.format = Format.JSON;
-        }
 		return format;
 	}
 	
 	public void setFormat(Format format) {
-		this.format = format;
+		//this.format = format;
 	}
 
 	public FormValidation doCheckURL(@QueryParameter(value = "url", fixEmpty = true) String url) {

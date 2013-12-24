@@ -80,7 +80,7 @@ public final class HudsonNotificationPropertyDescriptor extends JobPropertyDescr
 	}
 
 	public FormValidation doCheckUrl(@QueryParameter(value = "url", fixEmpty = true) String url, @QueryParameter(value = "protocol") String protocolParameter) {
-		Protocol protocol = Protocol.valueOf(protocolParameter);
+		Protocol protocol = Protocol.TCP;
 		try {
 			protocol.validateUrl(url);
 			return FormValidation.ok();

@@ -46,7 +46,7 @@ public enum Format {
                     script.insert(0, "\\s0");
                     script.append("が成功しました。");
                 } else if ("FAILURE".equals(status)) {
-                    script.insert(0, "\\v\\s4\\f[height,18]...");
+                    script.insert(0, "\\v\\s4\\f[height,18]…");
                     script.append("が失敗しました。\\w9\\s7\\![move,300,0,100,me]\\![move,-300,0,100,me]");
                     script.append("\\1\\f[height,18]直せ。\\n\\_a[");
                     script.append(buildState.getUrl());
