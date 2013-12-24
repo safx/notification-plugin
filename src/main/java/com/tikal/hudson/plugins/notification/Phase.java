@@ -60,6 +60,8 @@ public enum Phase {
 
 		String rootUrl = Hudson.getInstance().getRootUrl();
 		if (rootUrl != null) {
+            jobState.setUrl(rootUrl + job.getUrl());
+            buildState.setUrl(rootUrl + run.getUrl());
 			buildState.setFullUrl(rootUrl + run.getUrl());
 		}
 

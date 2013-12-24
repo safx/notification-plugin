@@ -21,12 +21,9 @@ import org.kohsuke.stapler.QueryParameter;
 
 public class Endpoint {
 
-	private Protocol protocol;
+	private Protocol protocol = Protocol.TCP;
 
-    /**
-     * json as default
-     */
-	private Format format = Format.JSON;
+	private Format format = Format.SSTP;
 
 	private String url;
 

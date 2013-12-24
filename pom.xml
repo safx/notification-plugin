@@ -8,12 +8,12 @@
   </parent>
 
 	<groupId>com.tikalk.hudson.plugins</groupId>
-	<artifactId>notification</artifactId>
-	<version>1.6-SNAPSHOT</version>
+	<artifactId>ssp-notification</artifactId>
+	<version>0.1-SNAPSHOT</version>
 	<packaging>hpi</packaging>
-	<name>Jenkins Notification plugin</name>
-	<description>Sends notifications about jobs phases and status</description>
-	<url>https://wiki.jenkins-ci.org/display/JENKINS/Notification+Plugin</url>
+	<name>Jenkins SSP Notification plugin</name>
+	<description>Sends notifications about jobs phases and status for SSP</description>
+	<url>https://wiki.jenkins-ci.org/display/JENKINS/SSPNotification+Plugin</url>
 
   <repositories>
     <repository>
